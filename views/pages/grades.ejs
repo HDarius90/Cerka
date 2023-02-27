@@ -1,0 +1,22 @@
+<%- include('../partials/head') %>
+    <%- include('../partials/navbar') %>
+
+
+        <h1>Grade Average</h1>
+
+        <ul>
+            <% for (let student of data.class){ %>
+                <li>
+                    <%= student.name %>
+                        <ul>
+                            <% for (let subject in student.grades){ %>
+                                <li>
+                                    <%= subject %> : <%= student.grades[subject] %>
+                                </li>
+                                <% } %>
+                        </ul>
+                </li>
+                <% } %>
+        </ul>
+
+        <%- include('../partials/foot') %>

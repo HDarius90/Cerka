@@ -1,6 +1,15 @@
 <%- include('../partials/head') %>
+<%- include('../partials/navbar') %>
 
 
-<h1>hello world</h1>
+<h1>Wellcome in the class</h1>
+
+<ul>
+    <% for (let student of data.class){ %>
+        <li><a href="/<%= student.name %>">
+            <%= student.name %>
+        </a></li>
+    <% } %>
+</ul>
 
 <%- include('../partials/foot') %>

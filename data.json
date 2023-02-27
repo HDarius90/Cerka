@@ -1,7 +1,7 @@
 {
     "class": [
         {
-            "student": "Nyunyu",
+            "name": "Nyunyu",
             "grades": {
                 "math": "1",
                 "history": "1",
@@ -27,7 +27,7 @@
             ]
         },
         {
-            "student": "Liana",
+            "name": "Liana",
             "grades": {
                 "math": "5",
                 "history": "5",
@@ -42,7 +42,7 @@
             "officeReferals": []
         },
         {
-            "student": "Csipi",
+            "name": "Csipi",
             "grades": {
                 "math": "2",
                 "history": "3",

@@ -10,7 +10,15 @@ app.set('view engine', 'ejs');
 
 
 app.get('/', (req, res) => {
-    res.render('pages/index');
+    res.render('pages/index', { data });
+})
+
+app.get('/grades', (req, res) => {
+    res.render('pages/grades', { data });
+})
+
+app.get('/newgrade', (req, res) => {
+    res.render('pages/newgrade', { data });
 })
 
 app.listen(3000, () => {

@@ -1,0 +1,19 @@
+body {
+    background-color: #faedcd;
+}
+
+h1,ul{
+    text-align: center;
+}
+
+h1+ul{
+    font-size: 2em;
+    list-style: none;
+}
+
+li>ul{
+    list-style: none;
+    font-size: 0.5em;
+    text-align: center;
+
+}
