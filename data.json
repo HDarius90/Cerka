@@ -1,0 +1,71 @@
+{
+    "class": [
+        {
+            "student": "Nyunyu",
+            "grades": {
+                "math": "1",
+                "history": "1",
+                "chemistry": "5",
+                "physics": "2",
+                "music": "5",
+                "geography": "1",
+                "foreign languages": "2",
+                "P.E": "3"
+            },
+            "unjustifiedAbsence": "100",
+            "officeReferals": [
+                {
+                    "teacher": "Perselus Piton",
+                    "description": "Nyunyu was smoking in my class",
+                    "seenByParent": "false"
+                },
+                {
+                    "teacher": "Minerva McGalagony",
+                    "description": "Nyunyu was late again...",
+                    "seenByParent": "false"
+                }
+            ]
+        },
+        {
+            "student": "Liana",
+            "grades": {
+                "math": "5",
+                "history": "5",
+                "chemistry": "5",
+                "physics": "5",
+                "music": "5",
+                "geography": "5",
+                "foreign languages": "5",
+                "P.E": "5"
+            },
+            "unjustifiedAbsence": "0",
+            "officeReferals": []
+        },
+        {
+            "student": "Csipi",
+            "grades": {
+                "math": "2",
+                "history": "3",
+                "chemistry": "2",
+                "physics": "3",
+                "music": "2",
+                "geography": "3",
+                "foreign languages": "2",
+                "P.E": "3"
+            },
+            "unjustifiedAbsence": "10",
+            "officeReferals": [
+                {
+                    "teacher": "Perselus Piton",
+                    "description": "Csipi was drunk in my class",
+                    "seenByParent": "true"
+                },
+                {
+                    "teacher": "Minerva McGalagony",
+                    "description": "Nyunyu was high in my class...",
+                    "seenByParent": "false"
+                }
+            ]
+        }
+    ]
+}
