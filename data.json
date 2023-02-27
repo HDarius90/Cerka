@@ -3,40 +3,40 @@
         {
             "name": "Nyunyu",
             "grades": {
-                "math": "1",
-                "history": "1",
-                "chemistry": "5",
-                "physics": "2",
-                "music": "5",
-                "geography": "1",
-                "foreign languages": "2",
-                "P.E": "3"
+                "Charms": "1",
+                "History of Magic": "1",
+                "Potions": "5",
+                "Defence Against the Dark Arts": "2",
+                "Transfiguration": "5",
+                "Herbology": "1",
+                "Astronomy": "2",
+                "Ancient Runes": "3"
             },
             "unjustifiedAbsence": "100",
             "officeReferals": [
                 {
                     "teacher": "Perselus Piton",
                     "description": "Nyunyu was smoking in my class",
-                    "seenByParent": "false"
+                    "seenByParent": false
                 },
                 {
                     "teacher": "Minerva McGalagony",
                     "description": "Nyunyu was late again...",
-                    "seenByParent": "false"
+                    "seenByParent": false
                 }
             ]
         },
         {
             "name": "Liana",
             "grades": {
-                "math": "5",
-                "history": "5",
-                "chemistry": "5",
-                "physics": "5",
-                "music": "5",
-                "geography": "5",
-                "foreign languages": "5",
-                "P.E": "5"
+                "Charms": "5",
+                "History of Magic": "5",
+                "Potions": "5",
+                "Defence Against the Dark Arts": "5",
+                "Transfiguration": "5",
+                "Herbology": "5",
+                "Astronomy": "5",
+                "Ancient Runes": "5"
             },
             "unjustifiedAbsence": "0",
             "officeReferals": []
@@ -44,26 +44,26 @@
         {
             "name": "Csipi",
             "grades": {
-                "math": "2",
-                "history": "3",
-                "chemistry": "2",
-                "physics": "3",
-                "music": "2",
-                "geography": "3",
-                "foreign languages": "2",
-                "P.E": "3"
+                "Charms": "2",
+                "History of Magic": "3",
+                "Potions": "2",
+                "Defence Against the Dark Arts": "3",
+                "Transfiguration": "2",
+                "Herbology": "3",
+                "Astronomy": "2",
+                "Ancient Runes": "3"
             },
             "unjustifiedAbsence": "10",
             "officeReferals": [
                 {
                     "teacher": "Perselus Piton",
                     "description": "Csipi was drunk in my class",
-                    "seenByParent": "true"
+                    "seenByParent": true
                 },
                 {
                     "teacher": "Minerva McGalagony",
                     "description": "Nyunyu was high in my class...",
-                    "seenByParent": "false"
+                    "seenByParent": false
                 }
             ]
         }

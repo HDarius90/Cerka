@@ -17,3 +17,9 @@ li>ul{
     text-align: center;
 
 }
+
+h3+ul {
+    list-style: none;
+    text-align: left;
+
+}

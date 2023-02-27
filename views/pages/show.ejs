@@ -1,0 +1,30 @@
+<%- include('../partials/head') %>
+    <%- include('../partials/navbar') %>
+
+        <h2>
+            <%= student.name %>
+        </h2>
+        <hr>
+        <h3>Grades:</h3>
+        <ul>
+            <% for (let subject in student.grades){ %>
+                <li>
+                    <%= subject %> : <%= student.grades[subject] %>
+                </li>
+                <% } %>
+        </ul>
+        <hr>
+        <h3>Number of absences : <%= student.unjustifiedAbsence %></h3>
+        <hr>
+        <% if (student.officeReferals) { %>
+            <% for (let referal of student.officeReferals) { %>
+                <section>
+                <b><%= referal.teacher %></b> - <%= referal.description %>
+                <% if(referal.seenByParent) { %>
+                    &#x2709;
+                    <% } %>
+                </section>
+                <% } %>
+        <% } %>
+
+        <%- include('../partials/foot') %>
