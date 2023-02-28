@@ -1,7 +1,26 @@
 <%- include('../partials/head') %>
     <%- include('../partials/navbar') %>
 
-    Hello World
+        <form action="/grade/newgrade/" method="post">
+            <section>
+                <label for="name">Name: </label>
+                <input type="text" id="name" placeholder="Nevil">
+                <br>
+                <label for="subject">Subject: </label>
+                <select name="subject" id="subject">
+                    <% let subjects=Object.keys(data.class[0].grades) %>
+                        <% for (let subj of subjects) { %>
+                            <option value="<%= subj %>">
+                                <%= subj %>
+                            </option>
+                            <% } %>
+                </select>
+                <br>
+                <label for="grade">Grade</label>
+                <input id="grade" type="number" max="5" min="1" placeholder="1">
+                <button>Send</button>
+            </section>
+        </form>
 
 
 

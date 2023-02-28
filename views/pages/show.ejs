@@ -9,7 +9,7 @@
         <ul>
             <% for (let subject in student.grades){ %>
                 <li>
-                    <%= subject %> : <%= student.grades[subject] %>
+                    <b><%= subject %></b> : <%= student.grades[subject] %>
                 </li>
                 <% } %>
         </ul>
@@ -20,7 +20,7 @@
             <% for (let referal of student.officeReferals) { %>
                 <section>
                 <b><%= referal.teacher %></b> - <%= referal.description %>
-                <% if(referal.seenByParent) { %>
+                <% if(!referal.seenByParent) { %>
                     &#x2709;
                     <% } %>
                 </section>

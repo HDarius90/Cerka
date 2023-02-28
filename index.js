@@ -16,7 +16,7 @@ app.get('/', (req, res) => {
 app.get('/grades', (req, res) => {
     res.render('pages/grades', { data });
 })
-app.get('/:name', (req, res) => {
+app.get('/grade/:name', (req, res) => {
     const { name } = req.params;
     const student = data.class.find( st => st.name === name);
     
@@ -25,6 +25,11 @@ app.get('/:name', (req, res) => {
 
 app.get('/newgrade', (req, res) => {
     res.render('pages/newgrade', { data });
+})
+
+app.post('/grade/newgrade', (req, res) => {
+    console.log(req.body);
+    res.redirect('/grades');
 })
 
 app.listen(3000, () => {

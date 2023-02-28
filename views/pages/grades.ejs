@@ -7,11 +7,12 @@
         <ul>
             <% for (let student of data.class){ %>
                 <li>
-                    <%= student.name %>
+                    <u><%= student.name %></u>
                         <ul>
                             <% for (let subject in student.grades){ %>
                                 <li>
-                                    <%= subject %> : <%= student.grades[subject] %>
+                                    <b><%= subject %></b> : <%= student.grades[subject].reduce((a,b)=> a + b, 0) /
+                                            student.grades[subject].length %>
                                 </li>
                                 <% } %>
                         </ul>

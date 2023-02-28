@@ -3,14 +3,14 @@
         {
             "name": "Nyunyu",
             "grades": {
-                "Charms": "1",
-                "History of Magic": "1",
-                "Potions": "5",
-                "Defence Against the Dark Arts": "2",
-                "Transfiguration": "5",
-                "Herbology": "1",
-                "Astronomy": "2",
-                "Ancient Runes": "3"
+                "Charms": [1, 2, 3, 2, 1],
+                "History of Magic": [1, 1, 1, 2, 1],
+                "Potions": [5, 5, 5, 5, 5],
+                "Defence Against the Dark Arts": [4, 2, 3, 4, 1],
+                "Transfiguration": [1, 2, 3, 2, 1],
+                "Herbology": [5, 5, 5, 5, 5],
+                "Astronomy": [1, 2, 3, 2, 1],
+                "Ancient Runes": [1, 2, 3, 2, 1]
             },
             "unjustifiedAbsence": "100",
             "officeReferals": [
@@ -23,20 +23,25 @@
                     "teacher": "Minerva McGalagony",
                     "description": "Nyunyu was late again...",
                     "seenByParent": false
+                },
+                {
+                    "teacher": "Minerva McGalagony",
+                    "description": "Nyunyu sexually asaulted his classmates...",
+                    "seenByParent": true
                 }
             ]
         },
         {
             "name": "Liana",
             "grades": {
-                "Charms": "5",
-                "History of Magic": "5",
-                "Potions": "5",
-                "Defence Against the Dark Arts": "5",
-                "Transfiguration": "5",
-                "Herbology": "5",
-                "Astronomy": "5",
-                "Ancient Runes": "5"
+                "Charms": [ 5, 5, 5, 5],
+                "History of Magic": [ 5, 5, 5, 5],
+                "Potions": [ 5, 5, 5, 5],
+                "Defence Against the Dark Arts": [ 5, 5, 5, 5],
+                "Transfiguration": [ 5, 5, 5, 5],
+                "Herbology": [ 5, 5, 5, 5],
+                "Astronomy": [ 5, 5, 5, 5],
+                "Ancient Runes": [ 5, 5, 5, 5]
             },
             "unjustifiedAbsence": "0",
             "officeReferals": []
@@ -44,25 +49,25 @@
         {
             "name": "Csipi",
             "grades": {
-                "Charms": "2",
-                "History of Magic": "3",
-                "Potions": "2",
-                "Defence Against the Dark Arts": "3",
-                "Transfiguration": "2",
-                "Herbology": "3",
-                "Astronomy": "2",
-                "Ancient Runes": "3"
+                "Charms": [ 5, 5, 5, 5],
+                "History of Magic": [ 5],
+                "Potions": [],
+                "Defence Against the Dark Arts": [ 1],
+                "Transfiguration": [ 5],
+                "Herbology": [ 5],
+                "Astronomy": [ 1],
+                "Ancient Runes": [ 3]
             },
             "unjustifiedAbsence": "10",
             "officeReferals": [
                 {
                     "teacher": "Perselus Piton",
-                    "description": "Csipi was drunk in my class",
+                    "description": "Csipi was late",
                     "seenByParent": true
                 },
                 {
                     "teacher": "Minerva McGalagony",
-                    "description": "Nyunyu was high in my class...",
+                    "description": "Csipi was smoking weed in my class...",
                     "seenByParent": false
                 }
             ]
