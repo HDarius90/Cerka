@@ -1,0 +1,10 @@
+<%- include('../partials/head') %>
+    <%- include('../partials/navbar') %>
+
+        <form action="/referals" method="GET">
+            <label for="name">Student: </label>
+            <input type="text" id="name" name="name" placeholder="Ron">
+            <button type="submit">See All Referals</button>
+        </form>
+
+        <%- include('../partials/foot') %>

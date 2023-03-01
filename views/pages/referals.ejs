@@ -1,0 +1,19 @@
+<%- include('../partials/head') %>
+    <%- include('../partials/navbar') %>
+
+        <section>
+
+            <% for (let ref of student.officeReferals) { %>
+                <p> <b>
+                        <%= ref.teacher %> -
+                    </b>
+                    <%= ref.description %>
+                        <% if(!ref.seenByParent) { %>
+                            &#x2709;
+                            <% } %>
+                </p>
+                <% } %>
+
+        </section>
+
+        <%- include('../partials/foot') %>

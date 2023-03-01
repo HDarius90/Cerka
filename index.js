@@ -45,6 +45,20 @@ app.post('/grade/newgrade', (req, res) => {
     res.redirect('/grades');
 })
 
+app.get('/reqref', (req, res) => {
+    res.render('pages/reqref');
+})
+
+app.get('/referals', (req, res) => {
+    const {name} = req.query;
+    const student = data.class.find( st => st.name === name);
+    if(!student){
+        res.redirect('/reqref');
+    }
+    res.render('pages/referals', {student})
+
+})
+
 app.listen(3000, () => {
     console.log('ON PORT 3000')
 })
