@@ -11,8 +11,10 @@
                         <ul>
                             <% for (let subject in student.grades){ %>
                                 <li>
-                                    <b><%= subject %></b> : <%= student.grades[subject].reduce((a,b)=> a + b, 0) /
-                                            student.grades[subject].length %>
+                                    <b><%= subject %></b> : 
+                                    <% if(student.grades[subject].length > 0){ %>
+                                    <%= Math.round(student.grades[subject].reduce((a,b)=> a + b, 0) / student.grades[subject].length) %>
+                                <% } %>
                                 </li>
                                 <% } %>
                         </ul>

@@ -4,7 +4,7 @@
         <form action="/grade/newgrade/" method="post">
             <section>
                 <label for="name">Name: </label>
-                <input type="text" id="name" placeholder="Nevil">
+                <input type="text" name="name" id="student" placeholder="Nevil">
                 <br>
                 <label for="subject">Subject: </label>
                 <select name="subject" id="subject">
@@ -17,8 +17,8 @@
                 </select>
                 <br>
                 <label for="grade">Grade</label>
-                <input id="grade" type="number" max="5" min="1" placeholder="1">
-                <button>Send</button>
+                <input id="grade" name="grade" type="number" max="5" min="1" value="1">
+                <button type="submit">Send</button>
             </section>
         </form>
 

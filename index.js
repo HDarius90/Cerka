@@ -2,7 +2,13 @@ const express = require('express');
 const app = express();
 const path = require('path');
 const data = require('./data.json');
+const methodOverride = require('method-override')
 
+
+
+app.use(express.urlencoded({ extended: true })) // for parsing application/x-www-form-urlencoded
+app.use(express.json()) // for parsing application/json
+app.use(methodOverride('_method'))
 app.use(express.static(path.join(__dirname, '/public')));
 
 app.set('views', path.join(__dirname, 'views'))
@@ -28,7 +34,14 @@ app.get('/newgrade', (req, res) => {
 })
 
 app.post('/grade/newgrade', (req, res) => {
-    console.log(req.body);
+    const { name, subject, grade } = req.body;
+    const student = data.class.find( st => st.name === name);
+    try {
+        student.grades[subject].push(grade);        
+    } catch (error) {
+        res.redirect('/grades');
+        console.log(error);
+    }
     res.redirect('/grades');
 })
 
