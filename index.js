@@ -76,6 +76,18 @@ app.patch('/referals', (req, res) => {
     res.redirect('/reqref');
 })
 
+app.get('/absence', (req, res) => {
+    res.render('pages/absence', { data });
+})
+
+app.delete('/absence/:name', (req, res) => {
+    const {name} = req.params;
+    const student = data.class.find(st => st.name === name);
+    student.unjustifiedAbsence = 0;
+    res.redirect('/');
+
+})
+
 app.listen(3000, () => {
     console.log('ON PORT 3000')
 })
