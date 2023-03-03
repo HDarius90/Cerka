@@ -69,9 +69,11 @@ app.get('/referals', (req, res) => {
 })
 
 app.patch('/referals', (req, res) => {
-    const { checkbox } = req.body;
-    console.log(checkbox);
-    res.send("csá")
+    const { refID, name } = req.body;
+    const student = data.class.find(st => st.name === name);
+    const seenRef = student.officeReferals.find(ref => ref.id === refID);
+    seenRef.seenByParent = true;
+    res.redirect('/reqref');
 })
 
 app.listen(3000, () => {
