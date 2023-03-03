@@ -1,19 +1,27 @@
-<%- include('../partials/head') %>
-    <%- include('../partials/navbar') %>
+<%- include('../partials/functions'); %>
+    <%- include('../partials/head') %>
+        <%- include('../partials/navbar') %>
 
-        <section>
 
-            <% for (let ref of student.officeReferals) { %>
-                <p> <b>
-                        <%= ref.teacher %> -
-                    </b>
-                    <%= ref.description %>
-                        <% if(!ref.seenByParent) { %>
-                            &#x2709;
-                            <% } %>
-                </p>
-                <% } %>
 
-        </section>
 
-        <%- include('../partials/foot') %>
+            <form action="/referals/?_method=PATCH" method="POST">
+                <section>
+
+                    <% for (let ref of student.officeReferals) { %>
+                        <p> <b>
+                                <%= ref.teacher %> -
+                            </b>
+                            <%= ref.description %>
+                                <% if(!ref.seenByParent) { %>
+                                    &#x2709;
+                                    <button type="submit" name="<%= ref.id %>" onclick="setID(this.name)">Mark as
+                                        read</button>
+                                    <input type="text" name="checkbox" id="<%= ref.id %>">
+                                    <% } %>
+                        </p>
+                        <% } %>
+                </section>
+            </form>
+
+            <%- include('../partials/foot') %>
